@@ -1,0 +1,16 @@
+<html>
+<title></title>
+<body>
+<img src="http://bestclipartblog.com/clipart-pics/brain-clip-art-13.gif" style="margin-top:5%;width:250px">
+ <p class="lead" style="margin-top:10%; font-size:35px; margin-left:-20%">
+    <strong>BrainFuck is waiting for You</strong>.
+    </p>
+    <p id="button-row" style="margin-left:-7%; font-size: 30px;">
+    <% if current_user %>
+    <a href="http://localhost:3000/brainfuck/compiler" class="btn btn-large btn-success proxima-bold" style="font-size:30px;">Get started now !</a>
+    <% else %>
+    <a href="http://localhost:3000/users/sign_in" class="btn btn-large btn-success proxima-bold" style="font-size:30px;">Get started now !</a>
+    <% end %>
+    </p>
+    </body>
+</html>
