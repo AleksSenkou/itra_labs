@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container"> 
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="http://localhost:3000">Home</a></li>
+          <li><a href="/users/sign_in">Sign in</a></li>
+        </ul>
+        <div style = "margin-left: 35%">
+           <h1>Authorization</h1>
+        </div>
+      </div>
+   </div>  
+   <%= yield %>
+   <p style = "margin-left: 40%">
+	    <a class="btn btn-lg btn-success" href="/users/sign_up" role="button">Sign up today</a>
+  </p>
+</body>
+</html>
